@@ -1,0 +1,36 @@
+面试中的时间复杂度
+• 第一境界 二分法模板
+• 	递归与非递归的权衡
+• 	二分的三大痛点
+• 	通用的二分法模板
+• 第二境界：二分位置 之 圈圈叉叉 Binary Search on Index - OOXX
+• 	找到满足某个条件的第一个位置或者最后一个位置
+• 第三境界：二分位置 之 保留一半 Binary Search on Index - Half half
+• 	保留有解的一半，或者去掉无解的一半
+• 其他的 LogN 算法
+
+
+O(1) 极少
+• O(logn) 几乎都是二分法
+• O(√n) 几乎是分解质因数
+• O(n) 高频
+• O(nlogn) 一般都可能要排序
+• O(n2) 数组，枚举，动态规划
+• O(n3) 数组，枚举，动态规划
+• O(2n) 与组合有关的搜索
+• O(n!) 与排列有关的搜索
+
+比O(n)更优的时间复杂度
+几乎只能是O(logn)的二分法
+经验之谈：根据时间复杂度倒推算法是面试中的常用策略
+
+第一境界 二分法模板
+start + 1 < end
+start + (end - start) / 2
+A[mid] ==, <, >
+A[start] A[end] ? target
+
+死循环的发生
+Last Position of Target
+nums = [1,1], target = 1
+使用 start < end 无论如何都会出现死
