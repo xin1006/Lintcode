@@ -1,3 +1,5 @@
+//这道题用twopoint更快
+//
 public class Solution {
     /**
      * @param nums: an array of Integer
