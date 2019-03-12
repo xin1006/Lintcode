@@ -29,7 +29,7 @@ public class Solution {
                 return;
             }
             level.add(nums[i]);
-            helper(nums,i,level,res,target - nums[i]);// this is i not i + 1
+            helper(nums,i,level,res,target - nums[i]);// this is i not i + 1 在II中才会使用i+ 1
             level.remove(level.size() - 1);
         }
     }
